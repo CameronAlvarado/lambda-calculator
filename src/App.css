@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(149, 45, 57);
+    height: 500px;
+}
+
+.display {
+    background-color: rgb(54, 54, 56);
+    height: 50px;
+    width: 500px;
+}
