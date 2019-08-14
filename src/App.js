@@ -34,10 +34,16 @@ const addOperator = (operator) => {
       <Logo />
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Display number={displayValue} />
-        <Numbers addNumber={addNumber} />
-        <Operators addOperator={addOperator}/>
-        <Specials />
+          <Display number={displayValue} />
+          <div className="superAllButtons">
+          <div className="allButtons">
+            <Specials />
+            <Numbers addNumber={addNumber} />
+          </div>
+          <div className="operatorButtonContainer">
+            <Operators addOperator={addOperator}/>
+          </div>
+        </div>
       </div>
     </div>
   );

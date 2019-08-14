@@ -9,12 +9,12 @@ const Numbers = (props) => {
   const [numberState, setNumberState] = useState(numbers);
   console.log(props)
   return (
-    <div className="buttonContainer">
+    <div className="numberButtonContainer">
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
       {numberState.map( (number) => {
-        return <NumberButton text={number} addNumber={props.addNumber} />
+          return <NumberButton text={number} addNumber={props.addNumber} />
       })}
     </div>
   )

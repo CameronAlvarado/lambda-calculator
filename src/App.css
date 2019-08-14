@@ -3,18 +3,80 @@
     flex-direction: column;
     background-color: rgb(149, 45, 57);
     height: 300px;
-    width: 600px;
+    width: 300px;
 }
 
 .display {
     background-color: rgb(54, 54, 56);
     height: 50px;
-    width: 500px;
+    width: 250px;
     color: white;
     font-size: 2rem;
     padding-left: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+}
+
+.allButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+.numberButtonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 210px;
+}
+
+.zeroButton {
+    width: 100px;
+}
+
+.operatorButtonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60px;
+    height: 350px;
+}
+
+.superAllButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(149, 45, 57);
 }
 
 .number-button {
-
+    background-color: rgb(41, 67, 119);
+    color: white;
+    width:50px;
+    height:50px;
+    border-radius: 30px;
+    margin: 10px;
 }
+
+.operator-button {
+    background-color: rgb(65, 112, 144);
+    color: white;
+    width:50px;
+    height:50px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.special-button {
+    background-color: rgb(55, 91, 154);
+    color: white;
+    width:50px;
+    height:50px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
