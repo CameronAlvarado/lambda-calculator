@@ -5,9 +5,9 @@ const OperatorButton = (props) => {
     <>
       <button
       className="operator-button"
-      onClick={() => props.setOpState(props.opState)}
+      onClick={() => props.addOperator(props.operator.value)}
     >
-          {props.text}
+          {props.operator.char}
           
       </button>
       {/* Display a button element rendering the data being passed down from the parent container on props */}

@@ -2,11 +2,19 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(149, 45, 57);
-    height: 500px;
+    height: 300px;
+    width: 600px;
 }
 
 .display {
     background-color: rgb(54, 54, 56);
     height: 50px;
     width: 500px;
+    color: white;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+
+.number-button {
+
 }
