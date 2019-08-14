@@ -5,7 +5,7 @@ const SpecialButton = (props) => {
     <>
       <button
       className="special-button"
-      onClick={() => props.setspecState(props.specState)}
+      onClick={() => props.addSpecial(props.text)}
     >
           {props.text}
           

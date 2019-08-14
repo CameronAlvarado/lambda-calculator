@@ -28,6 +28,9 @@ const addOperator = (operator) => {
   setDisplayValue(displayValue => displayValue + " " + operator + " ")
   }
 };
+const addSpecial = (special) => {
+  setDisplayValue(displayValue => displayValue + special)
+}
 
   return (
     <div className="container">
@@ -36,12 +39,12 @@ const addOperator = (operator) => {
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
           <Display number={displayValue} />
           <div className="superAllButtons">
-          <div className="allButtons">
-            <Specials />
-            <Numbers addNumber={addNumber} />
-          </div>
-          <div className="operatorButtonContainer">
-            <Operators addOperator={addOperator}/>
+            <div className="allButtons">
+              <Specials addSpecial={addSpecial}/>
+              <Numbers addNumber={addNumber} />
+            </div>
+            <div className="operatorButtonContainer">
+              <Operators addOperator={addOperator}/>
           </div>
         </div>
       </div>
